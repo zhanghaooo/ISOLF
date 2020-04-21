@@ -1,0 +1,19 @@
+{
+    "name": "dihps",
+    "generator": "HyperplaneStreamGenerator",
+    "generate_config": {
+        "n_features": 4,
+        "n_drift_features": 0,
+        "concept_drift_proba": 0.0,
+        "concept_drift_speed": 0.0,
+        "imbalance_rate": 40,
+        "imbalance_rate_min": 10,
+        "imbalance_rate_max": 80,
+        "imbalance_drift_proba": 0.0001,
+        "imbalance_drift_speed": [5, 10, 20, 40],
+        "noise_percentage": 0.0
+    },
+    "stream_length": 100000,
+    "budget": 1,
+    "test_param": "generate_config:imbalance_drift_speed"
+}

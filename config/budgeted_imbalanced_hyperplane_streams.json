@@ -1,0 +1,17 @@
+{
+    "name": "bcdihps",
+    "generator": "HyperplaneStreamGenerator",
+    "generate_config": {
+        "n_features" : 8,
+        "n_drift_features": 4,
+        "concept_drift_proba": 0.0001,
+        "concept_drift_speed": 0.5,
+        "imbalance_rate": 80,
+        "imbalance_drift_proba": 0.0,
+        "imbalance_drift_speed": 0.0,
+        "noise_percentage": 0.0
+    },
+    "stream_length": 100000,
+    "budget": [1, 0.75, 0.5, 0.25],
+    "test_param": "budget"
+}
